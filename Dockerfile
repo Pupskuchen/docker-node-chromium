@@ -5,6 +5,7 @@ RUN echo @edge http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repos
     && echo @edge http://nl.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories \
     && apk --no-cache update \
     && apk --no-cache add \
+    libstdc++@edge \
     chromium@edge \
     nss@edge \
     freetype@edge \
